@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 40px;
+}
+.container{
+    border: 2px solid;
+    width: 100vw;
+    height: 350vh;
+}
+.unidade{
+    border: 2px solid blue;
+    width: 600px;
+    height: 350px;
+    font-size: 20px;
+}
+p{
+    font-size: 2rem;
+}
+.und{
+    font-size: 2rem;
+    color:  red;
+}
+h1{
+    border: 2px solid red;
+    width: 350px;
+}
