@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<!-- <html>: Elemento raiz que envolve todo o documento HTML. O atributo lang define o idioma da página para acessibilidade e SEO. -->
+<html lang="pt-BR">
+<head>
+    <!-- <meta>: Metadados do documento. Definem codificação de caracteres e configurações de viewport para dispositivos. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exemplo completo de documento HTML5 estruturado estritamente com tags semânticas e sem CSS.">
+    <!-- <title>: Define o título do documento exibido na aba do navegador ou resultados de busca. -->
+    <title>Guia Completo de Tags Semânticas HTML5 (Sem CSS)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- STREAMING_CHUNK:Criando estrutura do cabeçalho principal (<header>, <hgroup>, <nav>, <search>) -->
+    <!-- <header>: Representa o cabeçalho do documento ou de uma seção. Geralmente contém títulos, logos e navegação. -->
+    <header>
+        <!-- <hgroup>: Agrupa um título principal (<h1>-<h6>) com subtítulos ou descrições associadas. -->
+        <hgroup>
+            <h1>Portal de Estrutura Semântica HTML5</h1>
+            <p>Documento de demonstração de tags nativas sem qualquer estilização visual.</p>
+        </hgroup>
+
+        <!-- <search>: Elemento semântico para delimitar formulários ou recursos de busca e pesquisa. -->
+        <search>
+            <form action="#" method="get">
+                <!-- <label>: Associa uma etiqueta de texto explicativa a um controle de formulário via atributo 'for'. -->
+                <label for="busca-site">Buscar no guia:</label>
+                <!-- <input>: Campo de entrada de dados. O tipo 'search' indica visualmente e semanticamente uma busca. -->
+                <input type="search" id="busca-site" name="q" placeholder="Ex: article, nav, header...">
+                <!-- <button>: Botão clicável para submissão de formulário ou ação JS. -->
+                <button type="submit">Pesquisar</button>
+            </form>
+        </search>
+
+        <!-- <nav>: Seção que contém links de navegação principal da página ou do site. -->
+        <nav aria-label="Navegação Principal">
+            <!-- <ul>: Lista não ordenada de itens. -->
+            <ul>
+                <!-- <li>: Item individual de uma lista (<ul> ou <ol>). -->
+                <li><a href="#artigos">Artigos</a></li>
+                <li><a href="#midias">Mídias</a></li>
+                <li><a href="#dados">Tabelas e Dados</a></li>
+                <li><a href="#interativo">Interatividade</a>
+                <li><a href="#formulario">Formulário</a></li>
+            </ul>
+        </nav>
+        <div class="d_whats">
+        <p class="p_whats"><strong>W</strong></p>
+        </div>
+    </header>
+
+    <hr>
+
+    <!-- STREAMING_CHUNK:Iniciando elemento <main> e artigo principal com cabeçalhos e texto semântico -->
+    <!-- <main>: Representa o conteúdo principal e exclusivo da página (não deve ser duplicado em outras páginas). -->
+    <main>
+
+        <!-- <section>: Agrupa conteúdos relacionados por um mesmo tema dentro do documento. -->
+        <section id="artigos">
+            <h2>1. Seção de Conteúdo e Artigos</h2>
+
+            <!-- <article>: Conteúdo autônomo e independente que faz sentido por si só (ex: post, notícia, artigo). -->
+            <article>
+                <!-- <hgroup> utilizado dentro do artigo para título e subtítulo da postagem -->
+                <hgroup>
+                    <h3>A Revolução do HTML5 e a Acessibilidade</h3>
+                    <p>Como a escolha correta de tags impacta robôs de busca e leitores de tela.</p>
+                </hgroup>
+
+                <p>
+                    Escrito por <strong>João Silva</strong> em 
+                    <!-- <time>: Representa uma data, hora ou período legível por máquina através do atributo datetime. -->
+                    <time datetime="2026-09-23T10:00">23 de setembro de 2026</time>.
+                </p>
+
+                <!-- <h2> a <h6>: Títulos hierárquicos para organizar a estrutura do conteúdo. -->
+                <h4>Subtítulo do Artigo (Nível 4)</h4>
+                <h5>Detalhe Específico (Nível 5)</h5>
+                <h6>Nota Rodapé do Artigo (Nível 6)</h6>
+
+                <p>
+                    O HTML5 trouxe elementos que permitem dar sentido real aos blocos da página. Usar a tag correta garante que o conteúdo seja lido adequadamente por leitores de tela e indexado com precisão.
+                </p>
+
+                <p>
+                    <!-- <strong>: Texto de forte importância/urgência (renderizado em negrito por padrão). -->
+                    <strong>Importante:</strong> Semântica não é apenas organização, é 
+                    <!-- <em>: Texto com ênfase (renderizado em itálico por padrão). -->
+                    <em>acessibilidade universal</em>.
+                </p>
+
+                <p>
+                    <!-- <b>: Chama atenção para o texto sem conferir importância extra (estilo negrito). -->
+                    Podemos destacar termos como <b>HTML5</b>, <b>W3C</b> e 
+                    <!-- <i>: Termos técnicos, idiomas estrangeiros ou pensamentos (estilo itálico). -->
+                    <i>web semantics</i> usando tags de estilização semântica direta.
+                </p>
+
+                <p>
+                    <!-- <mark>: Representa texto destacado ou sublinhado por relevância em determinado contexto. -->
+                    O texto a seguir possui um <mark>destaque visual amarelo nativo</mark> gerado pela tag mark.
+                </p>
+
+                <p>
+                    <!-- <small>: Representa comentários secundários, avisos legais ou notas de rodapé. -->
+                    <small>* Isenção de responsabilidade: Este artigo é puramente para fins didáticos.</small>
+                </p>
+
+                <p>
+                    <!-- <abbr>: Define uma abreviação ou sigla, usando o atributo 'title' para a expansão completa. -->
+                    A <abbr title="World Wide Web Consortium">W3C</abbr> padroniza as tecnologias da Web.
+                </p>
+
+                <p>
+                    <!-- <dfn>: Define um termo que está sendo introduzido ou definido no texto. -->
+                    O conceito de <dfn>Semântica Web</dfn> refere-se à inclusão de significado aos dados das páginas.
+                </p>
+
+                <p>
+                    <!-- <q>: Citação curta em linha (o navegador insere aspas automaticamente). -->
+                    Como disse Tim Berners-Lee: <q>A Web é para todos, independente de suas capacidades.</q>
+                </p>
+
+                <!-- <blockquote>: Citação em bloco de uma fonte externa. -->
+                <!-- <cite>: Indica o título da obra ou autor citado. -->
+                <blockquote cite="https://www.w3.org">
+                    <p>
+                        "A web semântica permite que computadores e pessoas trabalhem em cooperação de forma muito mais eficiente."
+                    </p>
+                    <p>— <cite>World Wide Web Consortium (W3C)</cite></p>
+                </blockquote>
+
+                <h4>Exemplos de Código e Computação</h4>
+                <p>
+                    <!-- <code>: Trecho de código de computador em linha. -->
+                    Para declarar a variável utilize o comando <code>const nome = "HTML5";</code>.
+                </p>
+
+                <p>
+                    <!-- <kbd>: Entrada de teclado do usuário. -->
+                    Pressione <kbd>Ctrl</kbd> + <kbd>C</kbd> para copiar o código.
+                </p>
+
+                <p>
+                    <!-- <samp>: Saída de amostra de um programa de computador. -->
+                    O sistema retornou a seguinte resposta: <samp>200 OK - Requisição realizada com sucesso.</samp>
+                </p>
+
+                <p>
+                    <!-- <var>: Representa uma variável em uma expressão matemática ou contexto de programação. -->
+                    Na equação <var>f</var>(<var>x</var>) = <var>a</var><var>x</var> + <var>b</var>, determine o valor de <var>x</var>.
+                </p>
+
+                <!-- <pre>: Texto pré-formatado que preserva espaços em branco e quebras de linha exatamente como escritos. -->
+                <pre>
+<!-- Exemplo dentro de bloco pré-formatado -->
+function saudar() {
+    console.log("Olá, mundo semântico!");
+}
+                </pre>
+            </article>
+
+            <article>
+                <h3>Listas e Definições</h3>
+
+                <h4>Lista Não Ordenada (<ul>)</h4>
+                <ul>
+                    <li>Item A</li>
+                    <li>Item B
+                        <!-- Lista aninhada -->
+                        <ul>
+                            <li>Subitem B.1</li>
+                            <li>Subitem B.2</li>
+                        </ul>
+                    </li>
+                    <li>Item C</li>
+                </ul>
+
+                <h4>Lista Ordenada (<ol>)</h4>
+                <ol>
+                    <li>Primeira etapa</li>
+                    <li>Segunda etapa</li>
+                    <li>Terceira etapa</li>
+                </ol>
+
+                <h4>Lista de Definições (<dl>, <dt>, <dd>)</h4>
+                <!-- <dl>: Lista de definições (termos e descrições). -->
+                <dl>
+                    <!-- <dt>: Termo a ser definido na lista. -->
+                    <dt>HTML</dt>
+                    <!-- <dd>: Descrição ou definição do termo. -->
+                    <dd>Linguagem de Marcação de Hipertexto responsável pela estrutura da Web.</dd>
+
+                    <dt>CSS</dt>
+                    <dd>Folhas de Estilo em Cascata responsáveis pela apresentação visual.</dd>
+                </dl>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- STREAMING_CHUNK:Construindo seção de mídias (<figure>, <picture>, <audio>, <video>) -->
+        <section id="midias">
+            <h2>2. Seção de Mídias e Elementos Gráficos</h2>
+
+            <!-- <figure>: Agrupa conteúdo autônomo como imagens, gráficos, diagramas ou códigos com uma legenda. -->
+            <figure>
+                <!-- <picture>: Container para prover múltiplas fontes de imagem (responsivas ou formatos). -->
+                <picture>
+                    <!-- <source>: Especifica fontes de mídia alternativas com base em regras (ex: largura de tela). -->
+                    <source media="(min-width: 800px)" srcset="https://via.placeholder.com/800x300?text=Imagem+Para+Telas+Grandes">
+                    <source media="(min-width: 400px)" srcset="https://via.placeholder.com/400x200?text=Imagem+Para+Telas+Medias">
+                    <!-- <img>: Elemento de imagem. O atributo alt é obrigatório para acessibilidade. -->
+                    <img src="https://via.placeholder.com/300x150?text=Imagem+Padrao" alt="Exemplo de imagem responsiva com elemento picture">
+                </picture>
+                <!-- <figcaption>: Legenda descritiva para o elemento <figure> associado. -->
+                <figcaption>Figura 1: Exemplo de imagem responsiva utilizando a tag &lt;picture&gt; e &lt;source&gt;.</figcaption>
+            </figure>
+
+            <h3>Áudio Nativo</h3>
+            <!-- <audio>: Reproduz arquivos de som nativamente no navegador. controls exibe a barra de controle. -->
+            <audio controls>
+                <source src="audio-exemplo.mp3" type="audio/mpeg">
+                <source src="audio-exemplo.ogg" type="audio/ogg">
+                Seu navegador não suporta o elemento de áudio nativo.
+            </audio>
+
+            <h3>Vídeo Nativo</h3>
+            <!-- <video>: Reproduz arquivos de vídeo nativamente. -->
+            <video controls width="320" height="240">
+                <source src="video-exemplo.mp4" type="video/mp4">
+                <source src="video-exemplo.webm" type="video/webm">
+                Seu navegador não suporta o elemento de vídeo nativo.
+            </video>
+        </section>
+
+        <hr>
+
+        <!-- STREAMING_CHUNK:Criando tabela de dados (<table>, <caption>, <thead>, <tbody>, <tfoot>) e métricas (<meter>, <progress>) -->
+        <section id="dados">
+            <h2>3. Tabelas, Métricas e Dados</h2>
+
+            <!-- <table>: Define uma tabela de dados estruturada. -->
+            <table border="1">
+                <!-- <caption>: Título/legenda explicativa para a tabela. -->
+                <caption>Tabela 1: Cronograma e Mapeamento de Tags HTML5</caption>
+                <!-- <thead>: Cabeçalho do grupo de colunas/linhas da tabela. -->
+                <thead>
+                    <!-- <tr>: Linha de tabela (Table Row). -->
+                    <tr>
+                        <!-- <th>: Célula de cabeçalho da tabela (Table Header). -->
+                        <th>Categoria</th>
+                        <th>Tag</th>
+                        <th>Descrição Semântica</th>
+                    </tr>
+                </thead>
+                <!-- <tbody>: Corpo principal onde residem os dados da tabela. -->
+                <tbody>
+                    <tr>
+                        <!-- <td>: Célula de dados da tabela (Table Data). -->
+                        <td>Estrutura</td>
+                        <td><code>&lt;main&gt;</code></td>
+                        <td>Conteúdo primário e único do documento.</td>
+                    </tr>
+                    <tr>
+                        <td>Agrupamento</td>
+                        <td><code>&lt;hgroup&gt;</code></td>
+                        <td>Agrupa cabeçalhos principais e subtítulos.</td>
+                    </tr>
+                </tbody>
+                <!-- <tfoot>: Rodapé da tabela com totais, resumos ou notas. -->
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total de itens listados: 2 categorias.</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <h3>Medidores e Progresso</h3>
+            <p>
+                Status do carregamento do sistema:
+                <!-- <progress>: Exibe o progresso de uma tarefa em andamento. -->
+                <progress value="70" max="100">70%</progress> (70%)
+            </p>
+
+            <p>
+                Uso do disco rígido:
+                <!-- <meter>: Medidor escalar de um valor numérico dentro de um intervalo conhecido. -->
+                <meter value="85" min="0" max="100" low="30" high="80" optimum="20">85%</meter> (85% - Nível Alto)
+            </p>
+
+            <p>
+                Código do Produto em Máquina: 
+                <!-- <data>: Associa um valor legível por computador (atributo value) ao texto para o usuário. -->
+                <data value="PROD-9982-X">Produto Eletrônico #9982</data>
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- STREAMING_CHUNK:Criando seção interativa com <details>, <summary> e <dialog> -->
+        <section id="interativo">
+            <h2>4. Elementos Interativos Nativos</h2>
+
+            <!-- <details>: Cria um widget de divulgação/sanfona nativo para ocultar ou exibir informações. -->
+            <details>
+                <!-- <summary>: Cabeçalho ou legenda visível e clicável do elemento <details>. -->
+                <summary>Clique aqui para expandir e ler mais informações</summary>
+                <p>
+                    Este conteúdo fica oculto até que o usuário clique no cabeçalho summary. Não é necessário JavaScript para este comportamento funcional básico!
+                </p>
+            </details>
+
+            <h3>Caixa de Diálogo Nativa</h3>
+            <p>Abaixo temos a representação estrutural da tag de diálogo modal:</p>
+            <!-- <dialog>: Representa uma caixa de diálogo, janela modal ou popup nativo. -->
+            <dialog id="meu-dialogo" open>
+                <p>Este é um elemento <code>&lt;dialog&gt;</code> nativo exibido na tela!</p>
+                <form method="dialog">
+                    <button type="submit">Fechar Janela</button>
+                </form>
+            </dialog>
+        </section>
+
+        <hr>
+
+        <!-- STREAMING_CHUNK:Criando formulário completo com <fieldset>, <legend>, <select>, <optgroup>, <textarea> -->
+        <section id="formulario">
+            <h2>5. Formulários Semânticos</h2>
+
+            <!-- <form>: Container para coleta e envio de dados do usuário. -->
+            <form action="#" method="post">
+
+                <!-- <fieldset>: Agrupa visualmente e semanticamente campos relacionados dentro do formulário. -->
+                <fieldset>
+                    <!-- <legend>: Título ou legenda explicativa para o bloco <fieldset>. -->
+                    <legend>Dados Pessoais do Usuário</legend>
+
+                    <p>
+                        <label for="nome">Nome Completo:</label><br>
+                        <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+                    </p>
+
+                    <p>
+                        <label for="email">E-mail de Contato:</label><br>
+                        <input type="email" id="email" name="email" required placeholder="email@exemplo.com">
+                    </p>
+
+                    <p>
+                        <label for="idade">Idade:</label><br>
+                        <input type="number" id="idade" name="idade" min="18" max="100">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferências e Opções</legend>
+
+                    <p>
+                        <label for="categoria">Selecione uma Categoria:</label><br>
+                        <!-- <select>: Lista suspensa de seleção. -->
+                        <select id="categoria" name="categoria">
+                            <!-- <optgroup>: Agrupa opções relacionadas dentro do menu <select>. -->
+                            <optgroup label="Tecnologia">
+                                <!-- <option>: Opção individual dentro do menu de seleção. -->
+                                <option value="html">HTML5 Semântico</option>
+                                <option value="js">JavaScript ES6</option>
+                            </optgroup>
+                            <optgroup label="Design">
+                                <option value="ux">Experiência do Usuário (UX)</option>
+                                <option value="ui">Interface do Usuário (UI)</option>
+                            </optgroup>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="mensagem">Sua Mensagem ou Comentários:</label><br>
+                        <!-- <textarea>: Campo de entrada de texto com múltiplas linhas. -->
+                        <textarea id="mensagem" name="mensagem" rows="5" cols="40" placeholder="Escreva seu texto aqui..."></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Enviar Formulário</button>
+                    <button type="reset">Limpar Campos</button>
+                </p>
+            </form>
+        </section>
+
+    </main>
+    <section>
+        <h2>Titulo 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempore vel quae doloribus ex? At eius sapiente dignissimos odit dolor, placeat eaque qui dolorum libero voluptas voluptate aspernatur corrupti minima?</p>
+        <h2>Titulo 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempore vel quae doloribus ex? At eius sapiente dignissimos odit dolor, placeat eaque qui dolorum libero voluptas voluptate aspernatur corrupti minima?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempore vel quae doloribus ex? At eius sapiente dignissimos odit dolor, placeat eaque qui dolorum libero voluptas voluptate aspernatur corrupti minima?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempore vel quae doloribus ex? At eius sapiente dignissimos odit dolor, placeat eaque qui dolorum libero voluptas voluptate aspernatur corrupti minima?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempore vel quae doloribus ex? At eius sapiente dignissimos odit dolor, placeat eaque qui dolorum libero voluptas voluptate aspernatur corrupti minima?</p>
+          <h2>Titulo 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempore vel quae doloribus ex? At eius sapiente dignissimos odit dolor, placeat eaque qui dolorum libero voluptas voluptate aspernatur corrupti minima?</p>
+        <h2>Titulo 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempore vel quae doloribus ex? At eius sapiente dignissimos odit dolor, placeat eaque qui dolorum libero voluptas voluptate aspernatur corrupti minima?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempore vel quae doloribus ex? At eius sapiente dignissimos odit dolor, placeat eaque qui dolorum libero voluptas voluptate aspernatur corrupti minima?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempore vel quae doloribus ex? At eius sapiente dignissimos odit dolor, placeat eaque qui dolorum libero voluptas voluptate aspernatur corrupti minima?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempore vel quae doloribus ex? At eius sapiente dignissimos odit dolor, placeat eaque qui dolorum libero voluptas voluptate aspernatur corrupti minima?</p>
+          <h2>Titulo 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempore vel quae doloribus ex? At eius sapiente dignissimos odit dolor, placeat eaque qui dolorum libero voluptas voluptate aspernatur corrupti minima?</p>
+        <h2>Titulo 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempore vel quae doloribus ex? At eius sapiente dignissimos odit dolor, placeat eaque qui dolorum libero voluptas voluptate aspernatur corrupti minima?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempore vel quae doloribus ex? At eius sapiente dignissimos odit dolor, placeat eaque qui dolorum libero voluptas voluptate aspernatur corrupti minima?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempore vel quae doloribus ex? At eius sapiente dignissimos odit dolor, placeat eaque qui dolorum libero voluptas voluptate aspernatur corrupti minima?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempore vel quae doloribus ex? At eius sapiente dignissimos odit dolor, placeat eaque qui dolorum libero voluptas voluptate aspernatur corrupti minima?</p>
+
+    </section>
+
+    <hr>
+
+    <!-- STREAMING_CHUNK:Construindo a barra lateral <aside> com links e informações adicionais -->
+    <!-- <aside>: Seção secundária com conteúdo indiretamente relacionado ao conteúdo principal (ex: sidebar). -->
+    <aside>
+        <h2>Conteúdo Lateral (Sidebar)</h2>
+        <h3>Sobre o Autor</h3>
+        <p>
+            Página criada exclusivamente para exemplificar o HTML5 semântico de forma pura.
+        </p>
+
+        <h3>Links Relacionados</h3>
+        <ul>
+            <li><a href="https://developer.mozilla.org" target="_blank" rel="noopener">MDN Web Docs</a></li>
+            <li><a href="https://www.w3.org" target="_blank" rel="noopener">Especificação W3C</a></li>
+        </ul>
+    </aside>
+
+    <hr>
+
+    <!-- STREAMING_CHUNK:Finalizando o documento com o rodapé <footer> e dados em <address> -->
+    <!-- <footer>: Representa o rodapé do documento ou de uma seção (direitos autorais, contato, etc). -->
+    <footer>
+        <p>
+            <!-- <small> usado no rodapé para direitos autorais -->
+            <small>&copy; <time datetime="2026">2026</time> Guia Semântico HTML. Todos os direitos reservados.</small>
+        </p>
+
+        <!-- <address>: Informações de contato do autor ou proprietário do documento/artigo. -->
+        <address>
+            <p>Informações de Contato do Autor:</p>
+            <p>Email: <a href="mailto:contato@exemplo.com">contato@exemplo.com</a></p>
+            <p>Endereço: Av. Paulista, 1000 - São Paulo, SP - Brasil</p>
+        </address>
+    </footer>
+
+</body>
+</html>
