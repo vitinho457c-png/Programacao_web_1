@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulaoçao do html com get</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Manipulaoçao do html com get</h1>
+    <div id="div1" class="div1" 
+    onmouseover="mudarcordiv()" 
+    onmouseout="mudarVoltar()">
+  </div>
+    <p id="primParag">Mensagem orginal</p>
+
+    <button 
+    onclick="play()"
+    onmouseout="mudarCorVoltar()"
+    onmouseover="mudarCor()"
+    onclick="mudarparag()" 
+    id="btnEnviar">Enviar
+   </button>
+<button class="meu-botao">Tocar Som</button>
+
+<audio id="som-botao" src="Dowloads/audioplayback"></audio>
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>
